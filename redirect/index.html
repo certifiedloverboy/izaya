@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!-- Tab title -->
-    <title>izayatiji</title>
+    <title>izayatiji - redirect</title>
     
     <!-- Favicon (Tab Icon) -->
     <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/027/604/941/small/red-cross-icon-button-png.png" type="image/png">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Official website of izayatiji. Learn more about schizophrenia and related content.">
-    <meta name="keywords" content="izayatiji, izaya, izaya tiji, izayatiji.com, schizophrenia, mental health">
+    <meta name="description" content="You are being redirected to Instagram.">
+    <meta name="keywords" content="izayatiji, redirect, Instagram, virgilpiece, social media">
     <meta name="author" content="izayatiji">
     
     <style>
@@ -52,7 +52,7 @@
         }
 
         /* Delay Transition for Each Item */
-        .word, .phonetic, .definition, .domain {
+        .word, .phonetic, .definition, .redirect-message {
             opacity: 0;
             animation: fadeInFromLeft 1s ease forwards;
         }
@@ -69,8 +69,11 @@
             animation-delay: 200ms;
         }
 
-        .domain {
+        .redirect-message {
             animation-delay: 300ms;
+            color: darkgray;
+            margin-top: 20px;
+            font-size: 1rem;
         }
 
         .container {
@@ -96,26 +99,12 @@
             margin: 20px 0;
         }
 
-        .medical {
+        .definition-box {
             font-weight: bold;
             background-color: #333;
             color: white;
             padding: 5px;
             border-radius: 3px;
-        }
-
-        .domain {
-            color: darkgray;
-            margin-top: 20px;
-        }
-
-        .domain a {
-            text-decoration: none;
-            color: darkgray;
-        }
-
-        .domain a:hover {
-            text-decoration: underline;
         }
 
         /* Transition for Clicking Links */
@@ -139,16 +128,15 @@
 <body>
     <div class="container">
         <div class="word fade-in">
-            schizophrenia <span class="noun">noun</span>
+            redirect <span class="noun">verb</span>
         </div>
-        <div class="phonetic fade-in">schitz·o·phre·nia</div>
+        <div class="phonetic fade-in">re·di·rect</div>
         <div class="definition fade-in">
-            <span class="medical">medical</span>:
-            a mental illness that is characterized by disturbances in thought (such as delusions), perception (such as hallucinations), and behavior (such as disorganized speech or catatonic behavior),
-            by a loss of emotional responsiveness and extreme apathy, and by noticeable deterioration in the level of functioning in everyday life.
+            <span class="definition-box">definition</span>:
+            direct (something) to a new or different place or purpose.
         </div>
-        <div class="domain fade-in">
-            <a href="https://izayatiji.com/domain" target="_self">domain</a>
+        <div class="redirect-message fade-in">
+            YOUR BEING REDIRECTED
         </div>
     </div>
 
@@ -156,20 +144,14 @@
         // Apply the fade-in class when the page loads
         window.addEventListener('load', function () {
             document.body.classList.add('fade-in');
-        });
 
-        // Add fade-out transition when clicking a link
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent immediate navigation
-                const href = this.getAttribute('href');
-
+            // Redirect to Instagram after 2 seconds
+            setTimeout(function() {
                 document.body.classList.add('fade-out'); // Start fade-out transition
-
-                setTimeout(() => {
-                    window.location.href = href; // Redirect after the animation
-                }, 1000); // Match the animation duration
-            });
+                setTimeout(function() {
+                    window.location.href = "https://instagram.com/virgilpiece";
+                }, 1000); // Delay to match the fade-out animation
+            }, 2000); // Wait for 2 seconds before redirecting
         });
     </script>
 </body>

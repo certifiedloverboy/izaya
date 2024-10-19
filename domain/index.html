@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!-- Tab title -->
-    <title>izayatiji</title>
+    <title>izayatiji - domain</title>
     
     <!-- Favicon (Tab Icon) -->
     <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/027/604/941/small/red-cross-icon-button-png.png" type="image/png">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Official website of izayatiji. Learn more about schizophrenia and related content.">
-    <meta name="keywords" content="izayatiji, izaya, izaya tiji, izayatiji.com, schizophrenia, mental health">
+    <meta name="description" content="Domain page of izayatiji. Learn more about domain-related information.">
+    <meta name="keywords" content="izayatiji, domain, domain page, izaya, izaya tiji, schizophrenia">
     <meta name="author" content="izayatiji">
     
     <style>
@@ -52,7 +52,7 @@
         }
 
         /* Delay Transition for Each Item */
-        .word, .phonetic, .definition, .domain {
+        .word, .phonetic, .definition, .go-back, .virgil {
             opacity: 0;
             animation: fadeInFromLeft 1s ease forwards;
         }
@@ -69,8 +69,17 @@
             animation-delay: 200ms;
         }
 
-        .domain {
+        .go-back {
             animation-delay: 300ms;
+            color: darkgray;
+            cursor: pointer;
+        }
+
+        .virgil {
+            animation-delay: 400ms;
+            color: darkgray;
+            font-size: 0.9rem;
+            margin-top: 20px;
         }
 
         .container {
@@ -96,7 +105,7 @@
             margin: 20px 0;
         }
 
-        .medical {
+        .computer {
             font-weight: bold;
             background-color: #333;
             color: white;
@@ -104,17 +113,21 @@
             border-radius: 3px;
         }
 
-        .domain {
-            color: darkgray;
-            margin-top: 20px;
-        }
-
-        .domain a {
+        .go-back a {
             text-decoration: none;
             color: darkgray;
         }
 
-        .domain a:hover {
+        .go-back a:hover {
+            text-decoration: underline;
+        }
+
+        .virgil a {
+            text-decoration: none;
+            color: darkgray;
+        }
+
+        .virgil a:hover {
             text-decoration: underline;
         }
 
@@ -139,16 +152,18 @@
 <body>
     <div class="container">
         <div class="word fade-in">
-            schizophrenia <span class="noun">noun</span>
+            domain <span class="noun">noun</span>
         </div>
-        <div class="phonetic fade-in">schitz·o·phre·nia</div>
+        <div class="phonetic fade-in">dough·main</div>
         <div class="definition fade-in">
-            <span class="medical">medical</span>:
-            a mental illness that is characterized by disturbances in thought (such as delusions), perception (such as hallucinations), and behavior (such as disorganized speech or catatonic behavior),
-            by a loss of emotional responsiveness and extreme apathy, and by noticeable deterioration in the level of functioning in everyday life.
+            <span class="computer">computer</span>:
+            a subdivision of the Internet consisting of computers or sites usually with a common purpose (such as providing commercial information) and denoted in Internet addresses by a unique abbreviation (such as com for commercial sites or gov for government sites).
         </div>
-        <div class="domain fade-in">
-            <a href="https://izayatiji.com/domain" target="_self">domain</a>
+        <div class="go-back fade-in">
+            <a href="index.html" target="_self">go back</a>
+        </div>
+        <div class="virgil fade-in">
+            <a href="https://izayatiji.com/redirect" target="_self">@virgilpiece</a>
         </div>
     </div>
 
